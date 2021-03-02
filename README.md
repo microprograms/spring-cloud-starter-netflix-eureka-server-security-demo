@@ -5,6 +5,13 @@
 - `默认密码：` password
 - `默认注册地址：` http://eureka:password@localhost:8761/eureka/
 
+
+#### 版本依赖
+- `Jdk` 1.8 及以上
+- `Spring Boot` 2.3.9.RELEASE
+- `Spring Cloud` Hoxton.SR10
+
+
 #### 编译打包
 
 ```shell
