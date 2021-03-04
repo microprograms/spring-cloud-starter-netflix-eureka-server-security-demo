@@ -7,254 +7,249 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.3.9.RELEASE)
 
-2021-03-02 11:45:19.185  INFO 25771 --- [           main] tarterNetflixEurekaServerDemoApplication : No active profile set, falling back to default profiles: default
-2021-03-02 11:45:21.070  WARN 25771 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2021-03-02 11:45:21.439  INFO 25771 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=72c87f58-f56d-35ca-9bb7-37278b956360
-2021-03-02 11:45:22.249  INFO 25771 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
-2021-03-02 11:45:22.272  INFO 25771 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-03-02 11:45:22.273  INFO 25771 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-03-02 11:45:22.456  INFO 25771 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-03-02 11:45:22.457  INFO 25771 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3218 ms
-2021-03-02 11:45:22.658  WARN 25771 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2021-03-02 11:45:22.658  INFO 25771 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2021-03-02 11:45:22.683  INFO 25771 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@759fad4
-2021-03-02 11:45:23.487  INFO 25771 --- [           main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
-2021-03-02 11:45:23.625  INFO 25771 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2021-03-02 11:45:23.627  INFO 25771 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2021-03-02 11:45:23.911  INFO 25771 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2021-03-02 11:45:23.911  INFO 25771 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2021-03-02 11:45:25.252  INFO 25771 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@783115d9, org.springframework.security.web.context.SecurityContextPersistenceFilter@c3177d5, org.springframework.security.web.header.HeaderWriterFilter@479f2dc2, org.springframework.security.web.authentication.logout.LogoutFilter@446c3920, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@47b179d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c853486, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71cb3139, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3402b4c9, org.springframework.security.web.session.SessionManagementFilter@4ca8dbfa, org.springframework.security.web.access.ExceptionTranslationFilter@1eb2d371, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d7835a8]
-2021-03-02 11:45:25.274  WARN 25771 --- [           main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
-2021-03-02 11:45:25.276  WARN 25771 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2021-03-02 11:45:25.276  INFO 25771 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2021-03-02 11:45:25.883  INFO 25771 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-03-02 11:45:26.904  INFO 25771 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
-2021-03-02 11:45:26.996  WARN 25771 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2021-03-02 11:45:27.117  INFO 25771 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2021-03-02 11:45:27.183  INFO 25771 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2021-03-02 11:45:27.183  INFO 25771 --- [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
-2021-03-02 11:45:27.201  INFO 25771 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1614656727200 with initial instances count: 0
-2021-03-02 11:45:27.276  INFO 25771 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
-2021-03-02 11:45:27.280  INFO 25771 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://eureka:password@localhost:8761/eureka/]
-2021-03-02 11:45:27.587  INFO 25771 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2021-03-02 11:45:27.587  INFO 25771 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2021-03-02 11:45:27.588  INFO 25771 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2021-03-02 11:45:27.588  INFO 25771 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2021-03-02 11:45:27.788  INFO 25771 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://eureka:password@localhost:8761/eureka/
-2021-03-02 11:45:27.803  INFO 25771 --- [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
-2021-03-02 11:45:27.805  INFO 25771 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
-2021-03-02 11:45:27.842  INFO 25771 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2021-03-02 11:45:27.893  INFO 25771 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application UNKNOWN with eureka with status UP
-2021-03-02 11:45:27.899  INFO 25771 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
-2021-03-02 11:45:27.903  INFO 25771 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
-2021-03-02 11:45:27.905  INFO 25771 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
-2021-03-02 11:45:27.935  INFO 25771 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
-2021-03-02 11:45:27.936  INFO 25771 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
-2021-03-02 11:45:27.937  INFO 25771 --- [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
-2021-03-02 11:45:27.937  INFO 25771 --- [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
-2021-03-02 11:45:27.937  INFO 25771 --- [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
-2021-03-02 11:45:27.961  INFO 25771 --- [      Thread-10] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
-2021-03-02 11:45:27.994  INFO 25771 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
-2021-03-02 11:45:27.995  INFO 25771 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
-2021-03-02 11:45:28.026  INFO 25771 --- [           main] tarterNetflixEurekaServerDemoApplication : Started SpringCloudStarterNetflixEurekaServerDemoApplication in 11.502 seconds (JVM running for 12.705)
-2021-03-02 11:45:46.369  INFO 25771 --- [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-03-02 11:45:46.370  INFO 25771 --- [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-03-02 11:45:46.426  INFO 25771 --- [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 56 ms
-2021-03-02 11:45:47.676  INFO 25771 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ZUUL-DEMO/127.0.0.1:zuul-demo:5555:v1.0.0 with status UP (replication=false)
-2021-03-02 11:45:48.681  INFO 25771 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ZUUL-DEMO/127.0.0.1:zuul-demo:5555:v1.0.0 with status UP (replication=true)
-2021-03-02 11:46:13.018  INFO 25771 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:9591:v1.0.0 with status UP (replication=false)
-2021-03-02 11:46:13.536  INFO 25771 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:9591:v1.0.0 with status UP (replication=true)
-2021-03-02 11:46:27.942  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 11:46:37.044  INFO 25771 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:5069:v1.0.0 with status UP (replication=false)
-2021-03-02 11:46:37.564  INFO 25771 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:5069:v1.0.0 with status UP (replication=true)
-2021-03-02 11:47:27.945  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 11:47:46.168  INFO 25771 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:9591:v1.0.0 with status DOWN (replication=false)
-2021-03-02 11:47:46.678  INFO 25771 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:9591:v1.0.0 with status DOWN (replication=true)
-2021-03-02 11:47:51.338  INFO 25771 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DEMO2/127.0.0.1:demo2:9591:v1.0.0 (replication=false)
-2021-03-02 11:47:51.863  WARN 25771 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: DEMO2/127.0.0.1:demo2:9591:v1.0.0
-2021-03-02 11:47:51.864  INFO 25771 --- [nio-8761-exec-8] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): DEMO2 - 127.0.0.1:demo2:9591:v1.0.0
-2021-03-02 11:47:51.867  WARN 25771 --- [et_localhost-18] c.n.eureka.cluster.ReplicationTask       : The replication of task DEMO2/127.0.0.1:demo2:9591:v1.0.0:Cancel@localhost failed with response code 404
-2021-03-02 11:47:51.868  WARN 25771 --- [et_localhost-18] c.netflix.eureka.cluster.PeerEurekaNode  : DEMO2/127.0.0.1:demo2:9591:v1.0.0:Cancel@localhost: missing entry.
-2021-03-02 11:48:17.242  INFO 25771 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:9852:v1.0.0 with status UP (replication=false)
-2021-03-02 11:48:17.756  INFO 25771 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:9852:v1.0.0 with status UP (replication=true)
-2021-03-02 11:48:27.946  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 11:49:27.949  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 11:50:27.951  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 11:51:27.954  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 11:52:27.957  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 11:52:45.777  INFO 25771 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ZUUL-DEMO/127.0.0.1:zuul-demo:5555:v1.0.0 with status UP (replication=false)
-2021-03-02 11:52:46.304  INFO 25771 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ZUUL-DEMO/127.0.0.1:zuul-demo:5555:v1.0.0 with status UP (replication=true)
-2021-03-02 11:53:18.824  INFO 25771 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:5921:v1.0.0 with status UP (replication=false)
-2021-03-02 11:53:19.337  INFO 25771 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:5921:v1.0.0 with status UP (replication=true)
-2021-03-02 11:53:27.972  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 11:54:27.976  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 11:55:27.979  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 11:56:27.981  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 11:57:27.983  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 11:58:27.986  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 11:59:27.989  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 12:35:50.968  INFO 25771 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 8
-2021-03-02 12:35:51.104  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 12:35:51.107  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=4, evictionLimit=1)
-2021-03-02 12:35:51.111  WARN 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for DEMO1/127.0.0.1:demo1:5069:v1.0.0
-2021-03-02 12:35:51.113  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DEMO1/127.0.0.1:demo1:5069:v1.0.0 (replication=false)
-2021-03-02 12:36:00.675  WARN 25771 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: DEMO1 - 127.0.0.1:demo1:5069:v1.0.0
-2021-03-02 12:36:00.677  WARN 25771 --- [nio-8761-exec-9] c.n.eureka.resources.InstanceResource    : Not Found (Renew): DEMO1 - 127.0.0.1:demo1:5069:v1.0.0
-2021-03-02 12:36:00.726  INFO 25771 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:5069:v1.0.0 with status UP (replication=false)
-2021-03-02 12:36:01.377  INFO 25771 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:5069:v1.0.0 with status UP (replication=true)
-2021-03-02 12:36:51.106  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:15:16.127  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 13:16:16.130  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 13:17:16.132  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:18:16.136  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 13:18:57.711  INFO 25771 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:5921:v1.0.0 with status DOWN (replication=false)
-2021-03-02 13:18:58.226  INFO 25771 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:5921:v1.0.0 with status DOWN (replication=true)
-2021-03-02 13:18:58.609  INFO 25771 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:5069:v1.0.0 with status DOWN (replication=false)
-2021-03-02 13:18:59.123  INFO 25771 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:5069:v1.0.0 with status DOWN (replication=true)
-2021-03-02 13:19:04.374  INFO 25771 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DEMO1/127.0.0.1:demo1:5921:v1.0.0 (replication=false)
-2021-03-02 13:19:04.471  INFO 25771 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DEMO1/127.0.0.1:demo1:5069:v1.0.0 (replication=false)
-2021-03-02 13:19:04.880  WARN 25771 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: DEMO1/127.0.0.1:demo1:5921:v1.0.0
-2021-03-02 13:19:04.906  INFO 25771 --- [nio-8761-exec-3] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): DEMO1 - 127.0.0.1:demo1:5921:v1.0.0
-2021-03-02 13:19:04.911  WARN 25771 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: DEMO1/127.0.0.1:demo1:5069:v1.0.0
-2021-03-02 13:19:04.911  INFO 25771 --- [nio-8761-exec-3] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): DEMO1 - 127.0.0.1:demo1:5069:v1.0.0
-2021-03-02 13:19:04.913  WARN 25771 --- [et_localhost-13] c.n.eureka.cluster.ReplicationTask       : The replication of task DEMO1/127.0.0.1:demo1:5921:v1.0.0:Cancel@localhost failed with response code 404
-2021-03-02 13:19:04.914  WARN 25771 --- [et_localhost-13] c.netflix.eureka.cluster.PeerEurekaNode  : DEMO1/127.0.0.1:demo1:5921:v1.0.0:Cancel@localhost: missing entry.
-2021-03-02 13:19:04.915  WARN 25771 --- [et_localhost-13] c.n.eureka.cluster.ReplicationTask       : The replication of task DEMO1/127.0.0.1:demo1:5069:v1.0.0:Cancel@localhost failed with response code 404
-2021-03-02 13:19:04.916  WARN 25771 --- [et_localhost-13] c.netflix.eureka.cluster.PeerEurekaNode  : DEMO1/127.0.0.1:demo1:5069:v1.0.0:Cancel@localhost: missing entry.
-2021-03-02 13:19:16.138  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:20:16.141  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 13:21:16.143  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:22:16.147  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:22:38.231  INFO 25771 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:6963:v1.0.0 with status UP (replication=false)
-2021-03-02 13:22:38.744  INFO 25771 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:6963:v1.0.0 with status UP (replication=true)
-2021-03-02 13:23:16.148  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:23:37.107  INFO 25771 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:6963:v1.0.0 with status DOWN (replication=false)
-2021-03-02 13:23:37.612  INFO 25771 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:6963:v1.0.0 with status DOWN (replication=true)
-2021-03-02 13:23:42.613  INFO 25771 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DEMO1/127.0.0.1:demo1:6963:v1.0.0 (replication=false)
-2021-03-02 13:23:43.128  WARN 25771 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: DEMO1/127.0.0.1:demo1:6963:v1.0.0
-2021-03-02 13:23:43.129  INFO 25771 --- [nio-8761-exec-9] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): DEMO1 - 127.0.0.1:demo1:6963:v1.0.0
-2021-03-02 13:23:43.130  WARN 25771 --- [get_localhost-4] c.n.eureka.cluster.ReplicationTask       : The replication of task DEMO1/127.0.0.1:demo1:6963:v1.0.0:Cancel@localhost failed with response code 404
-2021-03-02 13:23:43.131  WARN 25771 --- [get_localhost-4] c.netflix.eureka.cluster.PeerEurekaNode  : DEMO1/127.0.0.1:demo1:6963:v1.0.0:Cancel@localhost: missing entry.
-2021-03-02 13:24:16.150  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:24:23.433  INFO 25771 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:7344:v1.0.0 with status UP (replication=false)
-2021-03-02 13:24:23.944  INFO 25771 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:7344:v1.0.0 with status UP (replication=true)
-2021-03-02 13:25:16.152  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:26:16.155  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 13:26:40.188  INFO 25771 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:7344:v1.0.0 with status DOWN (replication=false)
-2021-03-02 13:26:40.700  INFO 25771 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:7344:v1.0.0 with status DOWN (replication=true)
-2021-03-02 13:26:45.272  INFO 25771 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DEMO1/127.0.0.1:demo1:7344:v1.0.0 (replication=false)
-2021-03-02 13:26:45.782  WARN 25771 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: DEMO1/127.0.0.1:demo1:7344:v1.0.0
-2021-03-02 13:26:45.783  INFO 25771 --- [nio-8761-exec-1] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): DEMO1 - 127.0.0.1:demo1:7344:v1.0.0
-2021-03-02 13:26:45.785  WARN 25771 --- [get_localhost-8] c.n.eureka.cluster.ReplicationTask       : The replication of task DEMO1/127.0.0.1:demo1:7344:v1.0.0:Cancel@localhost failed with response code 404
-2021-03-02 13:26:45.786  WARN 25771 --- [get_localhost-8] c.netflix.eureka.cluster.PeerEurekaNode  : DEMO1/127.0.0.1:demo1:7344:v1.0.0:Cancel@localhost: missing entry.
-2021-03-02 13:27:16.157  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:27:50.778  INFO 25771 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:8168:v1.0.0 with status UP (replication=false)
-2021-03-02 13:27:51.301  INFO 25771 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:8168:v1.0.0 with status UP (replication=true)
-2021-03-02 13:28:12.258  INFO 25771 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:9852:v1.0.0 with status DOWN (replication=false)
-2021-03-02 13:28:12.784  INFO 25771 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:9852:v1.0.0 with status DOWN (replication=true)
-2021-03-02 13:28:16.001  INFO 25771 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
-2021-03-02 13:28:16.161  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 13:28:17.775  INFO 25771 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DEMO2/127.0.0.1:demo2:9852:v1.0.0 (replication=false)
-2021-03-02 13:28:18.284  WARN 25771 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: DEMO2/127.0.0.1:demo2:9852:v1.0.0
-2021-03-02 13:28:18.285  INFO 25771 --- [nio-8761-exec-9] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): DEMO2 - 127.0.0.1:demo2:9852:v1.0.0
-2021-03-02 13:28:18.286  WARN 25771 --- [get_localhost-4] c.n.eureka.cluster.ReplicationTask       : The replication of task DEMO2/127.0.0.1:demo2:9852:v1.0.0:Cancel@localhost failed with response code 404
-2021-03-02 13:28:18.286  WARN 25771 --- [get_localhost-4] c.netflix.eureka.cluster.PeerEurekaNode  : DEMO2/127.0.0.1:demo2:9852:v1.0.0:Cancel@localhost: missing entry.
-2021-03-02 13:28:44.168  INFO 25771 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:2197:v1.0.0 with status UP (replication=false)
-2021-03-02 13:28:44.689  INFO 25771 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:2197:v1.0.0 with status UP (replication=true)
-2021-03-02 13:29:16.163  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:30:16.166  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:31:08.732  INFO 25771 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:8168:v1.0.0 with status DOWN (replication=false)
-2021-03-02 13:31:09.249  INFO 25771 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:8168:v1.0.0 with status DOWN (replication=true)
-2021-03-02 13:31:13.217  INFO 25771 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DEMO1/127.0.0.1:demo1:8168:v1.0.0 (replication=false)
-2021-03-02 13:31:13.726  WARN 25771 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: DEMO1/127.0.0.1:demo1:8168:v1.0.0
-2021-03-02 13:31:13.726  INFO 25771 --- [nio-8761-exec-8] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): DEMO1 - 127.0.0.1:demo1:8168:v1.0.0
-2021-03-02 13:31:13.727  WARN 25771 --- [et_localhost-15] c.n.eureka.cluster.ReplicationTask       : The replication of task DEMO1/127.0.0.1:demo1:8168:v1.0.0:Cancel@localhost failed with response code 404
-2021-03-02 13:31:13.727  WARN 25771 --- [et_localhost-15] c.netflix.eureka.cluster.PeerEurekaNode  : DEMO1/127.0.0.1:demo1:8168:v1.0.0:Cancel@localhost: missing entry.
-2021-03-02 13:31:16.171  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:32:16.174  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 13:33:16.177  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 13:34:16.179  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:35:16.182  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:36:16.185  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 13:37:16.187  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:38:16.188  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:38:35.304  INFO 25771 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:2197:v1.0.0 with status DOWN (replication=false)
-2021-03-02 13:38:35.412  INFO 25771 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:2197:v1.0.0 with status DOWN (replication=true)
-2021-03-02 13:38:40.444  INFO 25771 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DEMO2/127.0.0.1:demo2:2197:v1.0.0 (replication=false)
-2021-03-02 13:38:40.953  WARN 25771 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: DEMO2/127.0.0.1:demo2:2197:v1.0.0
-2021-03-02 13:38:40.953  INFO 25771 --- [nio-8761-exec-4] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): DEMO2 - 127.0.0.1:demo2:2197:v1.0.0
-2021-03-02 13:38:40.955  WARN 25771 --- [et_localhost-15] c.n.eureka.cluster.ReplicationTask       : The replication of task DEMO2/127.0.0.1:demo2:2197:v1.0.0:Cancel@localhost failed with response code 404
-2021-03-02 13:38:40.955  WARN 25771 --- [et_localhost-15] c.netflix.eureka.cluster.PeerEurekaNode  : DEMO2/127.0.0.1:demo2:2197:v1.0.0:Cancel@localhost: missing entry.
-2021-03-02 13:39:16.190  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:40:16.192  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:41:16.194  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:42:16.198  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 13:43:16.031  INFO 25771 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
-2021-03-02 13:43:16.199  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:44:16.201  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:45:16.203  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:46:16.207  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 13:47:16.209  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:48:16.211  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:49:16.213  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:50:16.216  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 13:51:16.219  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 13:52:16.222  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 13:53:16.224  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:54:16.228  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 13:55:16.231  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 13:56:16.234  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:57:16.236  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:58:16.063  INFO 25771 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
-2021-03-02 13:58:16.238  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 13:59:16.241  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 14:00:16.244  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 14:01:16.252  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:02:16.255  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:03:00.101  INFO 25771 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO1/172.25.16.25:spring-cloud-microservice-demo1:0 with status UP (replication=false)
-2021-03-02 14:03:00.684  INFO 25771 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO1/172.25.16.25:spring-cloud-microservice-demo1:0 with status UP (replication=true)
-2021-03-02 14:03:16.258  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 14:04:16.261  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:05:16.263  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 14:05:58.250  INFO 25771 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:9153:v1.0.0 with status UP (replication=false)
-2021-03-02 14:05:58.760  INFO 25771 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:9153:v1.0.0 with status UP (replication=true)
-2021-03-02 14:06:16.265  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:07:16.267  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:08:16.270  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 14:09:16.273  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 14:10:16.215  INFO 25771 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:5867:v1.0.0 with status UP (replication=false)
-2021-03-02 14:10:16.275  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:10:16.723  INFO 25771 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:5867:v1.0.0 with status UP (replication=true)
-2021-03-02 14:11:16.277  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:12:16.279  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:13:16.092  INFO 25771 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 8
-2021-03-02 14:13:16.281  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:14:16.284  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:15:16.286  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:16:16.290  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:17:16.293  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 14:18:16.295  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:18:58.037  INFO 25771 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:9432:v1.0.0 with status UP (replication=false)
-2021-03-02 14:18:58.550  INFO 25771 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:9432:v1.0.0 with status UP (replication=true)
-2021-03-02 14:19:16.297  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:20:16.300  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:21:16.303  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 14:22:16.306  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:23:16.308  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:24:16.311  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 14:25:16.313  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:26:16.315  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:27:16.318  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 14:28:16.122  INFO 25771 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 10
-2021-03-02 14:28:16.320  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:29:16.323  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 14:30:16.326  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:31:16.329  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 14:33:26.018  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:34:26.020  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:35:26.023  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 14:36:26.026  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:40:03.619  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:41:03.621  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-03-02 14:42:03.624  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-03-02 14:43:03.626  INFO 25771 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:21:44.475  INFO 37146 --- [           main] tarterNetflixEurekaServerDemoApplication : No active profile set, falling back to default profiles: default
+2021-03-02 16:21:46.647  WARN 37146 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-03-02 16:21:47.061  INFO 37146 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=72c87f58-f56d-35ca-9bb7-37278b956360
+2021-03-02 16:21:47.871  INFO 37146 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
+2021-03-02 16:21:47.897  INFO 37146 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-02 16:21:47.898  INFO 37146 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-02 16:21:48.070  INFO 37146 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-02 16:21:48.071  INFO 37146 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3543 ms
+2021-03-02 16:21:48.365  WARN 37146 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-02 16:21:48.365  INFO 37146 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-02 16:21:48.395  INFO 37146 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@759fad4
+2021-03-02 16:21:49.236  INFO 37146 --- [           main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2021-03-02 16:21:49.379  INFO 37146 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-03-02 16:21:49.382  INFO 37146 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-03-02 16:21:49.699  INFO 37146 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-03-02 16:21:49.699  INFO 37146 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-03-02 16:21:51.253  INFO 37146 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@783115d9, org.springframework.security.web.context.SecurityContextPersistenceFilter@c3177d5, org.springframework.security.web.header.HeaderWriterFilter@479f2dc2, org.springframework.security.web.authentication.logout.LogoutFilter@446c3920, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@47b179d7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c853486, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71cb3139, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3402b4c9, org.springframework.security.web.session.SessionManagementFilter@4ca8dbfa, org.springframework.security.web.access.ExceptionTranslationFilter@1eb2d371, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d7835a8]
+2021-03-02 16:21:51.278  WARN 37146 --- [           main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
+2021-03-02 16:21:51.280  WARN 37146 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-02 16:21:51.281  INFO 37146 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-02 16:21:52.068  INFO 37146 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-02 16:21:52.947  INFO 37146 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-03-02 16:21:53.055  WARN 37146 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-03-02 16:21:53.180  INFO 37146 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-03-02 16:21:53.259  INFO 37146 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-03-02 16:21:53.260  INFO 37146 --- [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2021-03-02 16:21:53.279  INFO 37146 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1614673313278 with initial instances count: 0
+2021-03-02 16:21:53.362  INFO 37146 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2021-03-02 16:21:53.366  INFO 37146 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://eureka:password@localhost:8761/eureka/]
+2021-03-02 16:21:53.728  INFO 37146 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-03-02 16:21:53.729  INFO 37146 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-03-02 16:21:53.729  INFO 37146 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-03-02 16:21:53.730  INFO 37146 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-03-02 16:21:54.045  INFO 37146 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://eureka:password@localhost:8761/eureka/
+2021-03-02 16:21:54.068  INFO 37146 --- [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2021-03-02 16:21:54.070  INFO 37146 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2021-03-02 16:21:54.115  INFO 37146 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-02 16:21:54.190  INFO 37146 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application UNKNOWN with eureka with status UP
+2021-03-02 16:21:54.196  INFO 37146 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2021-03-02 16:21:54.198  INFO 37146 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2021-03-02 16:21:54.199  INFO 37146 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2021-03-02 16:21:54.252  INFO 37146 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2021-03-02 16:21:54.254  INFO 37146 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2021-03-02 16:21:54.254  INFO 37146 --- [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2021-03-02 16:21:54.254  INFO 37146 --- [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2021-03-02 16:21:54.255  INFO 37146 --- [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2021-03-02 16:21:54.288  INFO 37146 --- [      Thread-10] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2021-03-02 16:21:54.325  INFO 37146 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
+2021-03-02 16:21:54.327  INFO 37146 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2021-03-02 16:21:54.362  INFO 37146 --- [           main] tarterNetflixEurekaServerDemoApplication : Started SpringCloudStarterNetflixEurekaServerDemoApplication in 12.571 seconds (JVM running for 13.702)
+2021-03-02 16:22:00.510  INFO 37146 --- [nio-8761-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-02 16:22:00.511  INFO 37146 --- [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-02 16:22:00.526  INFO 37146 --- [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2021-03-02 16:22:54.260  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:23:25.977  INFO 37146 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-DEMO/127.0.0.1:gateway-demo:5555:v1.0.0 with status UP (replication=false)
+2021-03-02 16:23:26.918  INFO 37146 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-DEMO/127.0.0.1:gateway-demo:5555:v1.0.0 with status UP (replication=true)
+2021-03-02 16:23:54.262  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:24:07.849  INFO 37146 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:8421:v1.0.0 with status UP (replication=false)
+2021-03-02 16:24:08.373  INFO 37146 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:8421:v1.0.0 with status UP (replication=true)
+2021-03-02 16:24:23.246  INFO 37146 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:1039:v1.0.0 with status UP (replication=false)
+2021-03-02 16:24:23.760  INFO 37146 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:1039:v1.0.0 with status UP (replication=true)
+2021-03-02 16:24:54.264  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:25:40.796  INFO 37146 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:7510:v1.0.0 with status UP (replication=false)
+2021-03-02 16:25:41.312  INFO 37146 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:7510:v1.0.0 with status UP (replication=true)
+2021-03-02 16:25:54.267  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 16:26:54.269  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:27:54.272  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:28:54.275  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 16:29:54.277  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:30:54.279  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:31:54.281  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:32:54.284  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:33:54.288  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 16:34:54.290  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:35:54.293  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 16:36:54.107  INFO 37146 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 8
+2021-03-02 16:36:54.296  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 16:37:54.299  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 16:38:54.301  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:39:54.303  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:40:54.305  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:41:54.307  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:42:54.309  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:43:54.312  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:44:54.315  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 16:45:54.318  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:46:54.321  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 16:47:54.324  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 16:48:54.331  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:49:54.334  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 16:50:54.337  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:51:54.134  INFO 37146 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 8
+2021-03-02 16:51:54.340  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 16:52:54.343  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 16:53:54.345  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:54:54.348  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 16:55:54.351  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 16:56:54.353  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:57:54.355  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:58:54.358  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 16:59:54.360  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:00:54.363  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 17:01:54.365  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:02:54.368  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:03:54.374  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 17:04:54.377  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:06:10.190  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:07:09.532  INFO 37146 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 8
+2021-03-02 17:07:10.189  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 441ms
+2021-03-02 17:08:10.191  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:09:10.194  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:10:10.197  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 17:11:10.200  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:12:10.204  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 17:29:16.507  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:29:16.511  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=3, evictionLimit=1)
+2021-03-02 17:29:16.512  WARN 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for DEMO1/127.0.0.1:demo1:8421:v1.0.0
+2021-03-02 17:29:16.522  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DEMO1/127.0.0.1:demo1:8421:v1.0.0 (replication=false)
+2021-03-02 17:29:30.355  WARN 37146 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: DEMO1 - 127.0.0.1:demo1:8421:v1.0.0
+2021-03-02 17:29:30.355  WARN 37146 --- [nio-8761-exec-6] c.n.eureka.resources.InstanceResource    : Not Found (Renew): DEMO1 - 127.0.0.1:demo1:8421:v1.0.0
+2021-03-02 17:29:30.396  INFO 37146 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:8421:v1.0.0 with status UP (replication=false)
+2021-03-02 17:29:30.913  INFO 37146 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:8421:v1.0.0 with status UP (replication=true)
+2021-03-02 17:29:34.270  INFO 37146 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:7510:v1.0.0 with status DOWN (replication=false)
+2021-03-02 17:29:34.742  INFO 37146 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:7510:v1.0.0 with status DOWN (replication=true)
+2021-03-02 17:29:34.764  WARN 37146 --- [get_localhost-0] c.n.eureka.cluster.ReplicationTask       : The replication of task DEMO1/127.0.0.1:demo1:7510:v1.0.0:Heartbeat@localhost failed with response code 409
+2021-03-02 17:29:34.766  WARN 37146 --- [get_localhost-0] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 127.0.0.1:demo1:7510:v1.0.0 My Timestamp : 1614673540729, Peer's timestamp: 1614677374258
+2021-03-02 17:29:34.766  INFO 37146 --- [get_localhost-0] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:7510:v1.0.0 with status DOWN (replication=true)
+2021-03-02 17:29:35.191  INFO 37146 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:8421:v1.0.0 with status DOWN (replication=false)
+2021-03-02 17:29:35.701  INFO 37146 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO1/127.0.0.1:demo1:8421:v1.0.0 with status DOWN (replication=true)
+2021-03-02 17:29:39.975  INFO 37146 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DEMO1/127.0.0.1:demo1:7510:v1.0.0 (replication=false)
+2021-03-02 17:29:40.144  INFO 37146 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DEMO1/127.0.0.1:demo1:8421:v1.0.0 (replication=false)
+2021-03-02 17:29:40.494  WARN 37146 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: DEMO1/127.0.0.1:demo1:7510:v1.0.0
+2021-03-02 17:29:40.494  INFO 37146 --- [io-8761-exec-10] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): DEMO1 - 127.0.0.1:demo1:7510:v1.0.0
+2021-03-02 17:29:40.494  WARN 37146 --- [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: DEMO1/127.0.0.1:demo1:8421:v1.0.0
+2021-03-02 17:29:40.495  INFO 37146 --- [io-8761-exec-10] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): DEMO1 - 127.0.0.1:demo1:8421:v1.0.0
+2021-03-02 17:29:40.495  WARN 37146 --- [get_localhost-0] c.n.eureka.cluster.ReplicationTask       : The replication of task DEMO1/127.0.0.1:demo1:7510:v1.0.0:Cancel@localhost failed with response code 404
+2021-03-02 17:29:40.496  WARN 37146 --- [get_localhost-0] c.netflix.eureka.cluster.PeerEurekaNode  : DEMO1/127.0.0.1:demo1:7510:v1.0.0:Cancel@localhost: missing entry.
+2021-03-02 17:29:40.496  WARN 37146 --- [get_localhost-0] c.n.eureka.cluster.ReplicationTask       : The replication of task DEMO1/127.0.0.1:demo1:8421:v1.0.0:Cancel@localhost failed with response code 404
+2021-03-02 17:29:40.496  WARN 37146 --- [get_localhost-0] c.netflix.eureka.cluster.PeerEurekaNode  : DEMO1/127.0.0.1:demo1:8421:v1.0.0:Cancel@localhost: missing entry.
+2021-03-02 17:30:16.511  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 17:31:16.514  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 17:31:32.306  INFO 37146 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:1039:v1.0.0 with status DOWN (replication=false)
+2021-03-02 17:31:32.827  INFO 37146 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance DEMO2/127.0.0.1:demo2:1039:v1.0.0 with status DOWN (replication=true)
+2021-03-02 17:31:36.989  INFO 37146 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance DEMO2/127.0.0.1:demo2:1039:v1.0.0 (replication=false)
+2021-03-02 17:31:37.500  WARN 37146 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: DEMO2/127.0.0.1:demo2:1039:v1.0.0
+2021-03-02 17:31:37.500  INFO 37146 --- [nio-8761-exec-7] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): DEMO2 - 127.0.0.1:demo2:1039:v1.0.0
+2021-03-02 17:31:37.501  WARN 37146 --- [get_localhost-0] c.n.eureka.cluster.ReplicationTask       : The replication of task DEMO2/127.0.0.1:demo2:1039:v1.0.0:Cancel@localhost failed with response code 404
+2021-03-02 17:31:37.501  WARN 37146 --- [get_localhost-0] c.netflix.eureka.cluster.PeerEurekaNode  : DEMO2/127.0.0.1:demo2:1039:v1.0.0:Cancel@localhost: missing entry.
+2021-03-02 17:32:16.516  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:33:16.519  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 17:34:16.522  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 17:35:16.525  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 17:36:16.528  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:37:16.531  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 17:38:15.860  INFO 37146 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2021-03-02 17:38:16.534  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:41:20.571  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:42:41.241  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:43:41.243  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:44:41.246  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:45:41.248  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:46:41.250  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:47:41.253  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:48:41.256  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 17:49:41.259  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 17:50:41.262  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:51:41.265  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 17:52:41.268  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:53:41.271  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 17:54:41.274  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:55:40.591  INFO 37146 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2021-03-02 17:55:41.277  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 17:56:41.279  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:57:41.282  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 17:58:41.285  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 17:59:41.288  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 18:00:41.291  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 18:01:41.294  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 18:02:41.295  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 18:03:41.298  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 18:04:41.301  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 18:05:41.306  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 18:06:41.308  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 18:07:41.311  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 18:08:41.314  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 18:09:41.317  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 18:10:40.621  INFO 37146 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2021-03-02 18:10:41.320  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 18:11:41.323  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 18:12:41.326  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 18:13:41.328  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 18:14:41.330  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 18:15:41.333  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 18:16:41.336  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 18:17:41.339  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 18:18:41.341  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 18:19:41.344  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 18:20:41.346  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 18:21:41.349  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 18:22:41.352  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 18:23:41.355  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 18:24:41.358  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 18:25:40.648  INFO 37146 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2021-03-02 18:25:41.360  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 18:26:41.362  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 18:27:41.364  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-02 19:12:02.165  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-02 19:12:02.166  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=1, evictionLimit=1)
+2021-03-02 19:12:02.166  WARN 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for GATEWAY-DEMO/127.0.0.1:gateway-demo:5555:v1.0.0
+2021-03-02 19:12:02.167  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance GATEWAY-DEMO/127.0.0.1:gateway-demo:5555:v1.0.0 (replication=false)
+2021-03-02 19:12:04.654  WARN 37146 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: GATEWAY-DEMO - 127.0.0.1:gateway-demo:5555:v1.0.0
+2021-03-02 19:12:04.655  WARN 37146 --- [nio-8761-exec-3] c.n.eureka.resources.InstanceResource    : Not Found (Renew): GATEWAY-DEMO - 127.0.0.1:gateway-demo:5555:v1.0.0
+2021-03-02 19:12:04.666  INFO 37146 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-DEMO/127.0.0.1:gateway-demo:5555:v1.0.0 with status UP (replication=false)
+2021-03-02 19:12:05.260  INFO 37146 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-DEMO/127.0.0.1:gateway-demo:5555:v1.0.0 with status UP (replication=true)
+2021-03-02 21:01:54.711  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2021-03-02 23:10:15.541  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2021-03-02 23:10:15.550  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=1, evictionLimit=1)
+2021-03-02 23:10:15.556  WARN 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for GATEWAY-DEMO/127.0.0.1:gateway-demo:5555:v1.0.0
+2021-03-02 23:10:15.577  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance GATEWAY-DEMO/127.0.0.1:gateway-demo:5555:v1.0.0 (replication=false)
+2021-03-02 23:10:18.439  WARN 37146 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: GATEWAY-DEMO - 127.0.0.1:gateway-demo:5555:v1.0.0
+2021-03-02 23:10:18.439  WARN 37146 --- [nio-8761-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): GATEWAY-DEMO - 127.0.0.1:gateway-demo:5555:v1.0.0
+2021-03-02 23:10:18.512  INFO 37146 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-DEMO/127.0.0.1:gateway-demo:5555:v1.0.0 with status UP (replication=false)
+2021-03-02 23:10:19.582  INFO 37146 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-DEMO/127.0.0.1:gateway-demo:5555:v1.0.0 with status UP (replication=true)
+2021-03-03 04:34:29.515  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-03 09:29:52.625  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-03 09:29:52.629  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Evicting 1 items (expired=1, evictionLimit=1)
+2021-03-03 09:29:52.629  WARN 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: expired lease for GATEWAY-DEMO/127.0.0.1:gateway-demo:5555:v1.0.0
+2021-03-03 09:29:52.632  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance GATEWAY-DEMO/127.0.0.1:gateway-demo:5555:v1.0.0 (replication=false)
+2021-03-03 09:30:01.743  WARN 37146 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: GATEWAY-DEMO - 127.0.0.1:gateway-demo:5555:v1.0.0
+2021-03-03 09:30:01.744  WARN 37146 --- [nio-8761-exec-5] c.n.eureka.resources.InstanceResource    : Not Found (Renew): GATEWAY-DEMO - 127.0.0.1:gateway-demo:5555:v1.0.0
+2021-03-03 09:30:01.782  INFO 37146 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-DEMO/127.0.0.1:gateway-demo:5555:v1.0.0 with status UP (replication=false)
+2021-03-03 09:30:02.391  INFO 37146 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance GATEWAY-DEMO/127.0.0.1:gateway-demo:5555:v1.0.0 with status UP (replication=true)
+2021-03-03 09:30:53.065  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-03 09:31:53.068  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-03 09:42:29.768  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-03 09:43:29.771  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-03 09:44:29.774  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-03 09:45:29.777  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-03 09:46:29.780  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-03 09:47:29.057  INFO 37146 --- [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 3
+2021-03-03 09:47:29.783  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-03 09:48:29.786  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-03 09:49:29.788  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-03 09:50:29.791  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-03-03 09:51:29.794  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-03 09:52:29.797  INFO 37146 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
